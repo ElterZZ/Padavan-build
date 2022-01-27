@@ -50,7 +50,6 @@ jobs:
         ################################################################################################
         #因不同型号配置功能不一样，所以先把配置项删除，如果你自己要添加其他的，也要写上删除这一条，切记！！！
         ################################################################################################
-        sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ZEROTIER/d' .config
@@ -69,8 +68,8 @@ jobs:
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         
-        sed -i '/CONFIG_FIRMWARE_CPU_1000MHZ/d' .config
-        echo "CONFIG_FIRMWARE_CPU_1000MHZ=y" >> .config
+        sed -i '/CONFIG_FIRMWARE_CPU_1100MHZ/d' .config
+        echo "CONFIG_FIRMWARE_CPU_1100MHZ=y" >> .config
         
 
         #########################################################################################
