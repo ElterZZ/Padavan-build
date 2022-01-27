@@ -69,8 +69,8 @@ jobs:
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         
-        #sed -i '/CONFIG_FIRMWARE_CPU_900MHZ/d' .config
-        #echo "CONFIG_FIRMWARE_CPU_900MHZ=y" >> .config
+        sed -i '/CONFIG_FIRMWARE_CPU_1000MHZ/d' .config
+        echo "CONFIG_FIRMWARE_CPU_1000MHZ=y" >> .config
         
 
         #########################################################################################
